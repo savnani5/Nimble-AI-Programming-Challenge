@@ -3,34 +3,40 @@
 ---
 ## Approach
 
+### Implmentation Details:
+
+1) I tried multiple architectures like vanilla unet, Attention unet, Residual Recurrent Attention Unet, Nested Unet etc. Nested Unet performed the best. 
+2) I also tried multiple loss functions i.e Binary Crossentropy Dice Loss, IOU loss, Focal-travesky loss etc. and the Binary Crossentropy Dice Loss worked bbest for the case. 3) Also I experimented with inputting only RGB images and also concatenating depth with RGB and inputiing them, the latter performed better.
+4) For the dataloader I did data augmentation using Resize, Horizontal Flip, Vertical Flip, Rotation, etc. transforms. 
+5) Also for training SGD with momentum with lr scheduler, lr of 0.001, batch size of 8 and 60 peochs worked better than adam with weight decay and same hyperparameters. 
+
 
 
 ### Reference papers
-1) ttps://arxiv.org/pdf/1804.03999.pdf
-2 https://www.nature.com/articles/s41598-021-90428-8
-3 https://www.mdpi.com/2313-433X/7/12/269/pdf
-4) 
-
+1) https://arxiv.org/pdf/1804.03999.pdf
+2) https://www.nature.com/articles/s41598-021-90428-8
+3) https://www.mdpi.com/2313-433X/7/12/269/pdf
+4) https://iopscience.iop.org/article/10.1088/1742-6596/1213/2/022003/pdf 
 
 
 ---
 ## Things to try given more time
  
->> Try more types of different losses for imbalanced classes in segmentation
+1) Try more types of different losses for imbalanced classes in segmentation
 
->> Change model parameters  
+2) Change model parameters  
 
->> Try Maskrcnn instead of current Architectures(although might need more data) 
+3) Try Maskrcnn instead of current Architectures(although might need more data) 
 
->> Use more data augmentation
+4) Use more data augmentation
 
->> Increase resolutiuon of input images
+5) Increase resolutiuon of input images
 
->> Similar to tumor segmentation - class imbalance - dice loss/ feed patches in unet
+6) Similar to tumor segmentation - class imbalance - dice loss/ feed patches in unet
 
->> check effect of depth on different models
+7) check effect of depth on different models
 
->> Increase learning rate
+8) Increase learning rate
 
 
 ---
