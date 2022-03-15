@@ -1,5 +1,6 @@
 # Nimble-AI-Programming-Challenge
 
+### Paras Savnani
 ---
 ## Approach
 Github Repo: https://github.com/savnani5/Nimble-AI-Programming-Challenge
