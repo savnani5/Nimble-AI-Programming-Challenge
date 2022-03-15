@@ -6,8 +6,13 @@
 ### Implmentation Details:
 
 1) I tried multiple architectures like vanilla unet, Attention unet, Residual Recurrent Attention Unet, Nested Unet etc. Nested Unet performed the best. 
-2) I also tried multiple loss functions i.e Binary Crossentropy Dice Loss, IOU loss, Focal-travesky loss etc. and the Binary Crossentropy Dice Loss worked bbest for the case. 3) Also I experimented with inputting only RGB images and also concatenating depth with RGB and inputiing them, the latter performed better.
+
+2) I also tried multiple loss functions i.e Binary Crossentropy Dice Loss, IOU loss, Focal-travesky loss etc. and the Binary Crossentropy Dice Loss worked bbest for the case. 
+
+3)  Also I experimented with inputting only RGB images and also concatenating depth with RGB and inputiing them, the latter performed better.
+
 4) For the dataloader I did data augmentation using Resize, Horizontal Flip, Vertical Flip, Rotation, etc. transforms. 
+
 5) Also for training SGD with momentum with lr scheduler, lr of 0.001, batch size of 8 and 60 peochs worked better than adam with weight decay and same hyperparameters. 
 
 
