@@ -15,6 +15,7 @@
 
 5) Also for training SGD with momentum with lr scheduler, lr of 0.001, batch size of 8 and 60 peochs worked better than adam with weight decay and same hyperparameters. 
 
+NOTE: Faced mulliple issues connecting with the AWS instance and ssh keys and got access on second last day only, so initially used my GPU (RTX 2060), and used both on the last day for parallelely testing variations to improve accuracy.
 
 
 ### Reference papers
