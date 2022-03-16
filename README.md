@@ -16,7 +16,7 @@ Github Repo: https://github.com/savnani5/Nimble-AI-Programming-Challenge
 
 5) Also for training SGD with momentum with lr scheduler, lr of 0.001, batch size of 8 and 60 peochs worked better than adam with weight decay and same hyperparameters. 
 
-_**NOTE: Faced mulliple issues connecting with the AWS instance and ssh keys and got access on second last day only, so initially used my GPU (RTX 2060), and used both on the last day for parallelely testing variations to improve accuracy.**_
+_**NOTE: Faced multiple issues connecting with the AWS instance and ssh keys and got access on second last day only, so initially used my GPU (RTX 2060), and used both on the last day for parallely testing variations to improve accuracy.**_
 
 
 ### Reference papers
